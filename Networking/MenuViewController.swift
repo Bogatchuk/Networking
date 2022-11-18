@@ -42,7 +42,7 @@ class MenuViewController: UICollectionViewController {
         case .coursesSwiftbook:
             performSegue(withIdentifier: "courses", sender: self)
         case .uploadImage:
-            print("uploadImage")
+            NetworkManager.shared.uploadImage(url: "https://api.imgur.com/3/image")
         }
         /*
          // MARK: - Navigation

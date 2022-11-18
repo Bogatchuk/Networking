@@ -92,4 +92,34 @@ class NetworkManager {
         }.resume()
         
     }
+    
+    func uploadImage(url: String){
+        
+        guard let image = UIImage(named: "loveIs") else {return}
+        guard let imageProperties = ImageProperties(withImage: image, key: "image") else { return }
+        let httpHeadrs = ["Authorization": "Client-ID f9a1e860bfa22c6"]
+        
+        guard let url = URL(string: url) else {return}
+        
+        var request = URLRequest(url: url)
+        request.httpMethod = "POST"
+        request.allHTTPHeaderFields = httpHeadrs
+        request.httpBody = imageProperties.data
+        
+        URLSession.shared.dataTask(with: request) { data, response, error in
+            if let response = response {
+                print(response)
+            }
+            
+            if let data = data {
+                do{
+                    let json = try JSONSerialization.jsonObject(with: data)
+                    print(json)
+                } catch {
+                    print(error)
+                }
+            }
+        }.resume()
+        
+    }
 }

@@ -21,6 +21,7 @@
 		883CC41E2926D11400148B4C /* Course.swift in Sources */ = {isa = PBXBuildFile; fileRef = 883CC41D2926D11400148B4C /* Course.swift */; };
 		883CC4202926DC7500148B4C /* WebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 883CC41F2926DC7500148B4C /* WebViewController.swift */; };
 		883CC4222926F09100148B4C /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 883CC4212926F09100148B4C /* NetworkManager.swift */; };
+		883CC4242927AC0100148B4C /* ImageProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 883CC4232927AC0100148B4C /* ImageProperties.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -40,6 +41,7 @@
 		883CC41D2926D11400148B4C /* Course.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Course.swift; sourceTree = "<group>"; };
 		883CC41F2926DC7500148B4C /* WebViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebViewController.swift; sourceTree = "<group>"; };
 		883CC4212926F09100148B4C /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
+		883CC4232927AC0100148B4C /* ImageProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageProperties.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -82,6 +84,7 @@
 				883CC41329267CEF00148B4C /* MenuCell.swift */,
 				883CC41B2926C36E00148B4C /* CourseCell.swift */,
 				883CC41D2926D11400148B4C /* Course.swift */,
+				883CC4232927AC0100148B4C /* ImageProperties.swift */,
 				883CC41729267DE800148B4C /* MenuSections.swift */,
 				883CC4052926546900148B4C /* Main.storyboard */,
 				883CC4082926546B00148B4C /* Assets.xcassets */,
@@ -170,6 +173,7 @@
 				883CC41629267D4C00148B4C /* MenuViewController.swift in Sources */,
 				883CC4002926546900148B4C /* AppDelegate.swift in Sources */,
 				883CC41C2926C36E00148B4C /* CourseCell.swift in Sources */,
+				883CC4242927AC0100148B4C /* ImageProperties.swift in Sources */,
 				883CC41429267CEF00148B4C /* MenuCell.swift in Sources */,
 				883CC41829267DE800148B4C /* MenuSections.swift in Sources */,
 				883CC4022926546900148B4C /* SceneDelegate.swift in Sources */,
