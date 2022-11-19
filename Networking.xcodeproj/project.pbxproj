@@ -22,6 +22,7 @@
 		883CC4202926DC7500148B4C /* WebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 883CC41F2926DC7500148B4C /* WebViewController.swift */; };
 		883CC4222926F09100148B4C /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 883CC4212926F09100148B4C /* NetworkManager.swift */; };
 		883CC4242927AC0100148B4C /* ImageProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 883CC4232927AC0100148B4C /* ImageProperties.swift */; };
+		883CC4262927D47B00148B4C /* DataProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 883CC4252927D47B00148B4C /* DataProvider.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -42,6 +43,7 @@
 		883CC41F2926DC7500148B4C /* WebViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebViewController.swift; sourceTree = "<group>"; };
 		883CC4212926F09100148B4C /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
 		883CC4232927AC0100148B4C /* ImageProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageProperties.swift; sourceTree = "<group>"; };
+		883CC4252927D47B00148B4C /* DataProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataProvider.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,6 +79,7 @@
 				883CC3FF2926546900148B4C /* AppDelegate.swift */,
 				883CC4012926546900148B4C /* SceneDelegate.swift */,
 				883CC4212926F09100148B4C /* NetworkManager.swift */,
+				883CC4252927D47B00148B4C /* DataProvider.swift */,
 				883CC4032926546900148B4C /* ImageViewController.swift */,
 				883CC41529267D4C00148B4C /* MenuViewController.swift */,
 				883CC4192926C29E00148B4C /* CoursesViewController.swift */,
@@ -177,6 +180,7 @@
 				883CC41429267CEF00148B4C /* MenuCell.swift in Sources */,
 				883CC41829267DE800148B4C /* MenuSections.swift in Sources */,
 				883CC4022926546900148B4C /* SceneDelegate.swift in Sources */,
+				883CC4262927D47B00148B4C /* DataProvider.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

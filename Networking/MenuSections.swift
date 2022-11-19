@@ -11,4 +11,5 @@ enum MenuSections: String, CaseIterable {
     case postRequest = "POST request"
     case coursesSwiftbook = "Courses SwiftBook"
     case uploadImage = "Upload Image"
+    case downloadFile = "Download File"
 }
