@@ -12,4 +12,10 @@ enum MenuSections: String, CaseIterable {
     case coursesSwiftbook = "Courses SwiftBook"
     case uploadImage = "Upload Image"
     case downloadFile = "Download File"
+    case coursesSwiftbookAF = "Courses SwiftBook AF"
+    case downloadImageAF = "Download Image AF"
+    case downloadLargeImageAF = "Download Large Image AF"
+    case postRequestAF = "POST request AF"
+    case put = "PUT Request AF"
+    
 }

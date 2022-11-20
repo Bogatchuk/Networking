@@ -59,7 +59,7 @@ class NetworkManager {
     
     func downloadImage(url: String, completion: @escaping (_ image: UIImage) -> ()){
     
-        guard let url = URL(string: "https://vjoy.cc/wp-content/uploads/2019/12/3dr-19.jpg") else { return }
+        guard let url = URL(string: url) else { return }
 
         let session = URLSession.shared
         

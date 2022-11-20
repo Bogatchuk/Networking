@@ -110,16 +110,46 @@ class MenuViewController: UICollectionViewController {
             showAler()
             dataProvider.startDownload()
             print("dwnload")
+        case .coursesSwiftbookAF:
+            performSegue(withIdentifier: "coursesAF", sender: self)
+        case .downloadImageAF:
+            performSegue(withIdentifier: "downloadImageAF", sender: self)
+        case .downloadLargeImageAF:
+            performSegue(withIdentifier: "downloadLargeImageAF", sender: self)
+        case .postRequestAF:
+            performSegue(withIdentifier: "postRequestAF", sender: self)
+        case .put:
+            performSegue(withIdentifier: "putRequestAF", sender: self)
         }
-        /*
-         // MARK: - Navigation
-         
-         // In a storyboard-based application, you will often want to do a little preparation before navigation
-         override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-         // Get the new view controller using [segue destinationViewController].
-         // Pass the selected object to the new view controller.
-         }
-         */
+    }
+        
+        // MARK: - Navigation
+        
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        print("coursesSwiftbookAF")
+        let coursesVC = segue.destination as? CoursesViewController
+        let imageVC = segue.destination as? ImageViewController
+            
+        switch segue.identifier {
+        case "courses":
+            coursesVC?.fetchData()
+        case "coursesAF":
+            coursesVC?.fetchDataAF()
+            print("coursesSwiftbookAF")
+        case "postRequestAF":
+            coursesVC?.postRequestAF()
+        case "putRequestAF":
+            coursesVC?.putRequest()
+        case "downloadImage":
+            imageVC?.getImage()
+        case "downloadImageAF":
+            imageVC?.getImageAF()
+        case "downloadLargeImageAF":
+            imageVC?.downdloadImageWithProgress()
+            
+        default:
+            break
+        }
     }
 
 }

@@ -11,11 +11,13 @@ class CoursesViewController: UITableViewController {
     
     private let jsonUrl = "https://swiftbook.ru//wp-content/uploads/api/api_courses"
     private var courses: [Course] = []
-
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        fetchData()
-    }
+    private let url = "https://jsonplaceholder.typicode.com/posts"
+    private let putUrl = "https://jsonplaceholder.typicode.com/posts/1"
+//    override func viewDidLoad() {
+//        super.viewDidLoad()
+//        //fetchData()
+//        //fetchDataAF()
+//    }
 
     // MARK: - Table view data source
 
@@ -43,7 +45,34 @@ class CoursesViewController: UITableViewController {
             
         }
     }
+    
+    func fetchDataAF(){
+        AlamofireNetworkManager.shared.sendRequest(url: jsonUrl){ courses in 
+            self.courses = courses
+            DispatchQueue.main.async {
+                self.tableView.reloadData()
+            }
+        }
+    }
 
+    func postRequestAF(){
+        AlamofireNetworkManager.shared.postRequest(url: url) { courses in
+            self.courses = courses
+            DispatchQueue.main.async {
+                self.tableView.reloadData()
+            }
+        }
+    }
+    
+    func putRequest() {
+        
+        AlamofireNetworkManager.shared.putRequest(url: putUrl) { (course) in
+            self.courses = course
+            DispatchQueue.main.async {
+                self.tableView.reloadData()
+            }
+        }
+    }
     // MARK: - Navigation
 
      override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
